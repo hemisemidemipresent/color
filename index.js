@@ -1,4 +1,6 @@
 let hentai = document.getElementById('hentai');
+let colorOut = document.getElementById('colorOut');
+
 function convert() {
     let value = hentai.value;
     if (isNaN(value) || value < 0 || value > 999999) {
@@ -30,11 +32,12 @@ function convert() {
     console.log(color);
     let body = document.getElementById('body');
     body.style.backgroundColor = color;
-    document.getElementById('outputColor').innerText = color;
+
     if (red * 0.299 + green * 0.587 + blue * 0.114 > 186) {
         body.style.color = '#000000';
     } else {
         body.style.color = '#ffffff';
     }
+    colorOut.innerText = color;
 }
 hentai.value = '200834';
