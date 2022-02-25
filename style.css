@@ -1,27 +1,25 @@
-body{
-    font-family: 'Open Sans',sans-serif;
-    color:whitesmoke;
-    background-color: #373747;
-    height:100vh;
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    height: 100vh;
 }
-#everything{
-    margin:auto;
-    width:50%;
-    padding:10px;
+#everything {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
 }
-#convo{
+#convo {
     align-items: flex-start;
     margin: 3em;
 }
-#input{
+#input {
     background-color: #434358;
 }
-#input::placeholder{
-    color:#671ddf;
-
+#input::placeholder {
+    color: #671ddf;
 }

@@ -30,7 +30,7 @@ function convert() {
     console.log(color);
     let body = document.getElementById('body');
     body.style.backgroundColor = color;
-
+    document.getElementById('outputColor').innerText = color;
     if (red * 0.299 + green * 0.587 + blue * 0.114 > 186) {
         body.style.color = '#000000';
     } else {
