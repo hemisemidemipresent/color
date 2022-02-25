@@ -27,7 +27,16 @@ function convert() {
             }
 
             let hentaiCode =
-                '' + Math.round((red / 255) * 99) + Math.round((green / 255) * 99) + Math.round((blue / 255) * 99);
+                '' +
+                Math.round((red / 255) * 99)
+                    .toString()
+                    .padStart(2, '0') +
+                Math.round((green / 255) * 99)
+                    .toString()
+                    .padStart(2, '0') +
+                Math.round((blue / 255) * 99)
+                    .toString()
+                    .padStart(2, '0');
 
             colorOut.innerText = hentaiCode;
         }
