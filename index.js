@@ -77,6 +77,8 @@ function convert() {
             body.style.color = '#ffffff';
         }
         colorOut.innerText = color;
+        hentaiLink.href = '';
+        hentaiLink.innerText = '';
     }
 }
 hentai.value = '200834';
