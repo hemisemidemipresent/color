@@ -1,6 +1,6 @@
 let hentai = document.getElementById('hentai');
 let colorOut = document.getElementById('colorOut');
-
+let hentaiLink = document.getElementById('hentaiLink');
 function convert() {
     let value = hentai.value;
     if (value.includes('#')) {
@@ -39,6 +39,9 @@ function convert() {
                     .padStart(2, '0');
 
             colorOut.innerText = hentaiCode;
+
+            hentaiLink.href = 'https://nhentai.net/g/' + hentaiCode;
+            hentaiLink.innerText = 'https://nhentai.net/g/' + hentaiCode;
         }
     } else if (isNaN(value) || value < 0 || value > 999999) {
         return alert('enter hentai code from 000000 - 999999, or hexadecimal color code from #000000 - #ffffff');

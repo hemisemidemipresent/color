@@ -1,25 +1,3 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-    height: 100vh;
-}
-#everything {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-#convo {
-    align-items: flex-start;
-    margin: 3em;
-}
-#input {
-    background-color: #434358;
-}
-#input::placeholder {
-    color: #671ddf;
+    font-family: 'Segoe UI', sans-serif;
 }
