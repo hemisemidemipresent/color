@@ -46,7 +46,7 @@ function convert() {
     } else if (isNaN(value) || value < 0 || value > 999999) {
         return alert('enter hentai code from 000000 - 999999, or hexadecimal color code from #000000 - #ffffff');
     } else {
-        value = value.toString();
+        value = parseInt(value).toString();
         while (value.length < 6) {
             value = '0' + value;
         }

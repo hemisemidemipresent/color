@@ -2,6 +2,5 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 a {
-    text-decoration: none;
-    color: #0057ff;
+    text-decoration: underline;
 }
